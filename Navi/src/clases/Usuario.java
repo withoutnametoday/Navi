@@ -1,4 +1,4 @@
-package Clases;
+package clases;
 
 public class Usuario {
 	private String rut;
@@ -21,8 +21,8 @@ public class Usuario {
 	}
 	
 	public static void main(String arg[]) {
-		//Provando nuevamente si funciona esta wea 
 		
 		System.out.println("Hola Mundo :)");
 	}
 }
+
