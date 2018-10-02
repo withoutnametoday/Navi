@@ -15,6 +15,7 @@ public class Alumno extends Usuario{
 	private String mailInstitucional;
 	
 	//procedimientos
+	/*
 	public boolean agregarRamoAprovado() {
 		
 	}
@@ -39,7 +40,7 @@ public class Alumno extends Usuario{
 	public boolean modificarPorcentajeAvance() {
 		
 	}
-	
+	*/
 	
 	
 	

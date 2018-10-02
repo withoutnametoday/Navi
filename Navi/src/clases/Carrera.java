@@ -8,12 +8,14 @@ public class Carrera {
 	private String nombreJefeCarrera;
 	
 	//metodos
-	
-	public boolean modificarMalla() //??????
-	public boolean cambiarJefeCarrera(String nombre) {
+	/*
+	public boolean modificarMalla() { //??????
 		
 	}
-	
+	public boolean cambiarJefeCarrera(String nombre) { //????????????????
+		
+	}
+	*/
 	
 	//setters getters
 	public ArrayList<Ramo> getMalla() {

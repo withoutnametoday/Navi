@@ -21,6 +21,7 @@ public class Ramo {
 	
 	
 	//metodos
+	/*
 	public boolean cambiarProfesor() {
 		
 	}
@@ -36,7 +37,7 @@ public class Ramo {
 	public boolean eliminarAlumno() {
 		
 	}
-	
+	*/
 	
 	
 	//setters y getter
@@ -111,12 +112,6 @@ public class Ramo {
 
 	public void setDesc(String desc) {
 		this.desc = desc;
-	}
-	public ArrayList<Alumno> getInscritos() {
-		return inscritos;
-	}
-	public void setInscritos(ArrayList<Alumno> inscritos) {
-		this.inscritos = inscritos;
 	}
 	public ArrayList<Float> getNotasPrueba() {
 		return notasPrueba;
