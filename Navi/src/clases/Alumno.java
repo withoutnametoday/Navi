@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Alumno extends Usuario{
 
+	//solo probando
 	private String nombres;
 	private String apellidos;
 	private ArrayList<Ramo> aprovado;
