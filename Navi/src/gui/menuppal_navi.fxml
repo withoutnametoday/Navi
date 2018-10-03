@@ -8,24 +8,23 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #dbc2ef;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="400.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Downloads/Fondo.jpeg" />
+            <Image url="@../Image/Fondo.jpeg" />
          </image>
       </ImageView>
       <HBox cacheShape="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="500.0" style="-fx-background-color: #628EBB;">
          <children>
             <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Downloads/message.png" />
+                  <Image url="@../Image/message.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true">
                <image>
-                  <Image url="@../Downloads/Campana.png" />
+                  <Image url="@../Image/Campana.png" />
                </image>
             </ImageView>
          </children>
@@ -34,7 +33,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/icons8_Clock_96px.png" />
+                  <Image url="@../Image/icons8_Clock_96px.png" />
                </image>
             </ImageView>
          </graphic>
@@ -46,7 +45,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/icons8_Maintenance_96px.png" />
+                  <Image url="@../Image/icons8_Maintenance_96px.png" />
                </image>
             </ImageView>
          </graphic>
@@ -58,7 +57,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/icons8_Today_96px.png" />
+                  <Image url="@../Image/icons8_Today_96px.png" />
                </image>
             </ImageView>
          </graphic>
@@ -70,7 +69,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/icons8_Idea_96px.png" />
+                  <Image url="@../Image/icons8_Idea_96px.png" />
                </image>
             </ImageView>
          </graphic>
@@ -82,7 +81,7 @@
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="32.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #480040;">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/Icons8_Ramos_96px.png" />
+                  <Image url="@../Image/Icons8_Ramos_96px.png" />
                </image>
             </ImageView>
          </graphic>
@@ -94,7 +93,7 @@
          <children>
             <ImageView fitHeight="109.0" fitWidth="113.0" layoutX="45.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/user_default.jpg" />
+                  <Image url="@../Image/user_default.jpg" />
                </image>
             </ImageView>
             <Label layoutX="45.0" layoutY="167.0" prefHeight="18.0" prefWidth="109.0" text="Nombres_Alumno" textFill="WHITE" />
