@@ -12,7 +12,7 @@ public class Ramo {
 	private String nombreAyudante;
 	private String mailAyudante;
 	private String horario;
-	private String desc;
+	private String descripcion;
 	private float promedioActual;
 	private ArrayList<Float> notasPrueba;
 	private ArrayList<Float> notasTaller;
@@ -107,11 +107,11 @@ public class Ramo {
 	}
 
 	public String getDesc() {
-		return desc;
+		return descripcion;
 	}
 
 	public void setDesc(String desc) {
-		this.desc = desc;
+		descripcion = desc;
 	}
 	public ArrayList<Float> getNotasPrueba() {
 		return notasPrueba;
