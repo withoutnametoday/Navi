@@ -15,6 +15,8 @@ public class Alumno extends Usuario{
 	private String mailPrivado;
 	private String mailInstitucional;
 	
+	
+	
 	//procedimientos
 	/*
 	public boolean agregarRamoAprovado() {
