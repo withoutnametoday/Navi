@@ -20,9 +20,5 @@ public class Usuario {
 		return clave;
 	}
 	
-	public static void main(String arg[]) {
-		
-		
-	}
 }
 

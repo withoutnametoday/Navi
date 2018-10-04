@@ -8,19 +8,18 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="473.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Downloads/Fondo.jpeg" />
+            <Image url="@../../extras/Image/Fondo.jpeg" />
          </image>
       </ImageView>
       <AnchorPane layoutX="500.0" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #76266C;">
          <children>
             <ImageView fitHeight="109.0" fitWidth="113.0" layoutX="45.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Dropbox/Nave/Interfaz/GUI/user_default.jpg" />
+                  <Image url="@../../extras/Image/user_default.jpg" />
                </image>
             </ImageView>
             <Label layoutX="45.0" layoutY="167.0" prefHeight="18.0" prefWidth="109.0" text="Nombres_Alumno" textFill="WHITE" />
@@ -54,12 +53,12 @@
          <children>
             <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Downloads/message.png" />
+                  <Image url="@../../extras/Image/message.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true">
                <image>
-                  <Image url="@../Downloads/Campana.png" />
+                  <Image url="@../../extras/Image/Campana.png" />
                </image>
             </ImageView>
          </children>
