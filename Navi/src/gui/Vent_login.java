@@ -22,6 +22,8 @@ import javax.swing.border.BevelBorder;
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
 import controlador.Login;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class Vent_login {
 
@@ -54,17 +56,18 @@ public class Vent_login {
 		initialize();
 	}
 	
+	
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		frmNavi = new JFrame();
+		frmNavi.setResizable(false);
 		frmNavi.getContentPane().setBackground(new Color(72, 209, 204));
 		frmNavi.setFont(null);
 		frmNavi.setIconImage(Toolkit.getDefaultToolkit().getImage(Vent_login.class.getResource("/Image/NavCoin-NAV-icon.png")));
 		frmNavi.setTitle("Navi ");
-		frmNavi.setResizable(false);
 		frmNavi.setBounds(100, 100, 700, 400);
 		frmNavi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		

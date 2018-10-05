@@ -7,17 +7,6 @@ public class Carrera {
 	private ArrayList<Ramo> malla;
 	private String nombreJefeCarrera;
 	
-	//metodos
-	/*
-	public boolean modificarMalla() { //??????
-		
-	}
-	public boolean cambiarJefeCarrera(String nombre) { //????????????????
-		
-	}
-	*/
-	
-	//setters getters
 	public ArrayList<Ramo> getMalla() {
 		return malla;
 	}

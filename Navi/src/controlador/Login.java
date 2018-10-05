@@ -19,7 +19,6 @@ public class Login {
 			result.first();
 			aux = (result.getString(1).equals(rt) && result.getString(2).equals(cl));
 			
-			System.out.println(aux);
 			while(result.next()) {
 				
 				if(aux) {
