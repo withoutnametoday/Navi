@@ -1,12 +1,15 @@
 package controlador;
 
+//import javax.swing.JOptionPane;
+
 import gui.Vent_login;
+//import gui.Vent_personal;
 
 public class Main {
 
-	public static void main(String arg[]) {
-		Vent_login ventana = new Vent_login();
+	public static void main(String[] arg){
 		
-		ventana.main(null);
+		Vent_login.main(null);
+		
 	}
 }

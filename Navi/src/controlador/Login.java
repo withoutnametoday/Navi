@@ -3,31 +3,29 @@ package controlador;
 import java.sql.*;
 
 import clases.Conexion;
-import clases.Usuario;
 
 public class Login {
 	
 	public boolean ingreso(String rt,String cl) {
 		Conexion con = new Conexion();
 		Connection cn;
+		boolean aux = false;
 		
 		cn = con.conexion();
 		try {
 			Statement st = cn.createStatement();
 			ResultSet result = st.executeQuery("SELECT * FROM user ");
-			Usuario user = new Usuario();
-			boolean aux;
-			System.out.println("punto control 1");
-			System.out.println(result.getString("rut"));
-			System.out.println("punto control 2");
+				
+			result.first();
+			aux = (result.getString(1).equals(rt) && result.getString(2).equals(cl));
 			
-			aux = user.ingresar(result.getString(1), result.getNString(2));
-			System.out.println("punto control 3");
+			System.out.println(aux);
 			while(result.next()) {
-				System.out.println("punto control 4");
+				
 				if(aux) {
 					return true;
 				}
+				aux = (result.getString(1).equals(rt) && result.getString(2).equals(cl));
 			}
 			
 		} catch (SQLException e) {
@@ -37,6 +35,6 @@ public class Login {
 		}
 		
 		
-		return false;
+		return aux;
 	}
 }

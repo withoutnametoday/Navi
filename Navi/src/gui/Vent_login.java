@@ -1,31 +1,27 @@
 package gui;
 
-import java.awt.EventQueue;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 import java.awt.Color;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
+import java.awt.Component;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
+import java.awt.event.ActionListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
-import java.awt.Font;
-import org.eclipse.wb.swing.FocusTraversalOnArray;
-
-import clases.Conexion;
-import controlador.Login;
-
-import java.awt.Component;
-import java.awt.Toolkit;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
-import javax.swing.ImageIcon;
-import javax.swing.LayoutStyle.ComponentPlacement;
+
+import org.eclipse.wb.swing.FocusTraversalOnArray;
+
+import controlador.Login;
 
 public class Vent_login {
 
@@ -33,16 +29,6 @@ public class Vent_login {
 	private JPasswordField buffClave;
 	private JTextField buffRut;
 
-	
-	public String getJPasswordField () {
-		
-		return buffClave;
-	}
-	
-	public String getJTextField() {
-		
-		return buffRut;
-	}
 	
 	/**
 	 * Launch the application.
@@ -118,13 +104,15 @@ public class Vent_login {
 		BtnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Login log = new Login();
+				String clav = String.valueOf(buffClave.getPassword());
 				
-				if(log.ingreso(buffRut.getText(), buffClave.getPassword().toString())){
+				if(log.ingreso(buffRut.getText(), clav)){
 					Vent_personal.main(null);
 				}
 				else {
 					JOptionPane.showMessageDialog(null,"Error al ingresar, intente nuevamente");
 				}
+				
 			}
 		});
 		BtnIngresar.setVerticalAlignment(SwingConstants.BOTTOM);
