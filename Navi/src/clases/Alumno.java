@@ -16,6 +16,7 @@ public class Alumno extends Usuario {
     private String numeroTelefono;
     private String mailPrivado;
     private String mailInstitucional;
+    private Carrera CarreraAlumno;
 
     //procedures 
     public Ramo verificarRamo(String codigo) {
@@ -193,7 +194,7 @@ public class Alumno extends Usuario {
             rec = aprovado.get(i);
             System.out.print(rec.getNombre() + " ");
             System.out.print(rec.getParalelo() + " ");
-            System.out.print(rec.getClave() + " ");
+            System.out.print(rec.getCodigo() + " ");
             System.out.print(rec.getNombreProfesor() + " ");
             System.out.print(rec.getMailProfesor() + " ");
             System.out.print(rec.getNombreAyudante() + " ");
@@ -218,7 +219,7 @@ public class Alumno extends Usuario {
                        if(i==0){
                            wr.write(rec.getNombre() + " ");
                            wr.append(rec.getParalelo() + " ");
-                           wr.append(rec.getClave() + " ");
+                           wr.append(rec.getCodigo() + " ");
                            wr.append(rec.getNombreProfesor() + " ");
                            wr.append(rec.getMailProfesor() + " ");
                            wr.append(rec.getNombreAyudante() + " ");
@@ -228,7 +229,7 @@ public class Alumno extends Usuario {
                        }
                        wr.append(rec.getNombre() + " ");
                        wr.append(rec.getParalelo() + " ");
-                       wr.append(rec.getClave() + " ");
+                       wr.append(rec.getCodigo() + " ");
                        wr.append(rec.getNombreProfesor() + " ");
                        wr.append(rec.getMailProfesor() + " ");
                        wr.append(rec.getNombreAyudante() + " ");
@@ -248,7 +249,7 @@ public class Alumno extends Usuario {
             rec = reprovado.get(i);
             System.out.print(rec.getNombre() + " ");
             System.out.print(rec.getParalelo() + " ");
-            System.out.print(rec.getClave() + " ");
+            System.out.print(rec.getCodigo() + " ");
             System.out.print(rec.getNombreProfesor() + " ");
             System.out.print(rec.getMailProfesor() + " ");
             System.out.print(rec.getNombreAyudante() + " ");
@@ -263,7 +264,7 @@ public class Alumno extends Usuario {
             rec = cursando.get(i);
             System.out.print(rec.getNombre() + " ");
             System.out.print(rec.getParalelo() + " ");
-            System.out.print(rec.getClave() + " ");
+            System.out.print(rec.getCodigo() + " ");
             System.out.print(rec.getNombreProfesor() + " ");
             System.out.print(rec.getMailProfesor() + " ");
             System.out.print(rec.getNombreAyudante() + " ");

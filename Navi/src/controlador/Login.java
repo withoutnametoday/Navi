@@ -2,8 +2,6 @@ package controlador;
 
 import java.sql.*;
 
-import clases.Conexion;
-
 public class Login {
 	
 	public boolean ingreso(String rt,String cl) {

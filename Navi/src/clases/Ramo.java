@@ -6,10 +6,10 @@ import java.util.ArrayList;
  *
  * @author Estudiante_2
  */
-public class Ramo extends Alumno{
+public class Ramo {
 	
 	private String nombre;
-        private int paralelo;
+    private int paralelo;
 	private String codigo;
 	private String nombreProfesor;
 	private String mailProfesor;
@@ -18,7 +18,7 @@ public class Ramo extends Alumno{
 	private String mailAyudante;
 	private String horario;
 	private String descripcion;
-        private float promedio;
+    private float promedio;
 	private ArrayList<Float> notasPrueba;
 	private ArrayList<Float> notasTaller;
 	private ArrayList<Float> notasQuiz;

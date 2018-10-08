@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import clases.Alumno;
-import clases.Conexion;
 
 public class Main {
 

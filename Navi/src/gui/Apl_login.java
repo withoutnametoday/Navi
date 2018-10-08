@@ -53,6 +53,7 @@ public class Apl_login extends JFrame {
 	 * Create the frame.
 	 */
 	private Apl_login() {
+		setUndecorated(true);
 		setResizable(false);
 		getContentPane().setBackground(new Color(72, 209, 204));
 		setFont(null);
@@ -66,7 +67,7 @@ public class Apl_login extends JFrame {
 		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(515, 0, 169, 361);
+		panel.setBounds(515, 0, 201, 416);
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panel.setBackground(new Color(0, 153, 255));
 		panel.setLayout(null);
@@ -120,7 +121,7 @@ public class Apl_login extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setIcon(new ImageIcon(Apl_login.class.getResource("/Image/Fondo.jpeg")));
-		lblNewLabel_1.setBounds(-78, -167, 762, 528);
+		lblNewLabel_1.setBounds(-78, -167, 794, 598);
 		getContentPane().add(lblNewLabel_1);
 		getContentPane().setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{lblNewLabel}));
 	}
