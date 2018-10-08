@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Toolkit;
-import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,11 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 
-public class Vent_personal extends JFrame {
+public class Apl_prin {
 
+	private JFrame frame;
 	private JPanel contentPane;
 	private JTextField txtApellido;
 	private JTextField txtNombre;
@@ -42,6 +40,7 @@ public class Vent_personal extends JFrame {
 	private JLabel label_4;
 	private JTextField buffPors;
 
+
 	/**
 	 * Launch the application.
 	 */
@@ -49,27 +48,34 @@ public class Vent_personal extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Vent_personal frame = new Vent_personal();
-					frame.setVisible(true);
+					Apl_prin window = new Apl_prin();
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 	}
-	
 
 	/**
-	 * Create the frame.
+	 * Create the application.
 	 */
-	public Vent_personal() {
-		setResizable(false);
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Vent_personal.class.getResource("/Image/NavCoin-NAV-icon.png")));
-		setBounds(100, 100, 700, 400);
+	public Apl_prin() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	public void initialize() {
+		frame = new JFrame();
+		frame.setResizable(false);
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(Apl_prin.class.getResource("/Image/NavCoin-NAV-icon.png")));
+		frame.setBounds(100, 100, 700, 400);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(0, 153, 204));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
+		frame.setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();

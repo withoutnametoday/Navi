@@ -22,16 +22,17 @@ import javax.swing.border.BevelBorder;
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
 import controlador.Login;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
+import controlador.Main;
 
-public class Vent_login {
+@SuppressWarnings("serial")
+public class Apl_login extends JFrame {
 
-	private JFrame frmNavi;
+	/**
+	 * 
+	 */
 	private JPasswordField buffClave;
 	private JTextField buffRut;
 
-	
 	/**
 	 * Launch the application.
 	 */
@@ -39,8 +40,8 @@ public class Vent_login {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Vent_login window = new Vent_login();
-					window.frmNavi.setVisible(true);
+					Apl_login frame = new Apl_login();
+					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -49,27 +50,16 @@ public class Vent_login {
 	}
 
 	/**
-	 * Create the application.
+	 * Create the frame.
 	 */
-	public Vent_login() {
-		
-		initialize();
-	}
-	
-	
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
-		frmNavi = new JFrame();
-		frmNavi.setResizable(false);
-		frmNavi.getContentPane().setBackground(new Color(72, 209, 204));
-		frmNavi.setFont(null);
-		frmNavi.setIconImage(Toolkit.getDefaultToolkit().getImage(Vent_login.class.getResource("/Image/NavCoin-NAV-icon.png")));
-		frmNavi.setTitle("Navi ");
-		frmNavi.setBounds(100, 100, 700, 400);
-		frmNavi.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	private Apl_login() {
+		setResizable(false);
+		getContentPane().setBackground(new Color(72, 209, 204));
+		setFont(null);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Apl_login.class.getResource("/Image/NavCoin-NAV-icon.png")));
+		setTitle("Navi ");
+		setBounds(100, 100, 700, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JLabel lblNewLabel = new JLabel("\u00A1BIENVENIDO ESTUDIANTE!");
 		lblNewLabel.setBounds(73, 25, 363, 46);
@@ -110,26 +100,29 @@ public class Vent_login {
 				String clav = String.valueOf(buffClave.getPassword());
 				
 				if(log.ingreso(buffRut.getText(), clav)){
-					Vent_personal.main(null);
+					//Main m = new Main();
+					
+					Apl_prin.main(null);
+					
 				}
 				else {
 					JOptionPane.showMessageDialog(null,"Error al ingresar, intente nuevamente");
 				}
-				
 			}
 		});
 		BtnIngresar.setVerticalAlignment(SwingConstants.BOTTOM);
 		BtnIngresar.setBounds(59, 239, 98, 26);
 		panel.add(BtnIngresar);
 		panel.setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{label, lblClave, buffClave, label_2, buffRut}));
-		frmNavi.getContentPane().setLayout(null);
-		frmNavi.getContentPane().add(lblNewLabel);
-		frmNavi.getContentPane().add(panel);
+		getContentPane().setLayout(null);
+		getContentPane().add(lblNewLabel);
+		getContentPane().add(panel);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.setIcon(new ImageIcon(Vent_login.class.getResource("/Image/Fondo.jpeg")));
+		lblNewLabel_1.setIcon(new ImageIcon(Apl_login.class.getResource("/Image/Fondo.jpeg")));
 		lblNewLabel_1.setBounds(-78, -167, 762, 528);
-		frmNavi.getContentPane().add(lblNewLabel_1);
-		frmNavi.getContentPane().setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{lblNewLabel}));
+		getContentPane().add(lblNewLabel_1);
+		getContentPane().setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[]{lblNewLabel}));
 	}
+
 }

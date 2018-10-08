@@ -17,7 +17,7 @@ public class Alumno extends Usuario {
     private String mailPrivado;
     private String mailInstitucional;
 
-    //procedimientos
+    //procedures 
     public Ramo verificarRamo(String codigo) {
         Carrera ramosUsuario = new Carrera();
         ArrayList<Ramo> malla = ramosUsuario.getMalla();
@@ -127,7 +127,7 @@ public class Alumno extends Usuario {
     }
 
     public boolean modificarNumeroTelefonico(String numeroNuevo) {
-        numeroTelefono = numeroNuevo;
+        setNumeroTelefono(numeroNuevo);
         return true;            //por ahora
     }
 
@@ -347,4 +347,12 @@ public class Alumno extends Usuario {
     public void setCursando(ArrayList<Ramo> cursando) {
         this.cursando = cursando;
     }
+
+	public String getNumeroTelefono() {
+		return numeroTelefono;
+	}
+
+	public void setNumeroTelefono(String numeroTelefono) {
+		this.numeroTelefono = numeroTelefono;
+	}
 }
