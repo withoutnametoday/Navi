@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -21,7 +22,6 @@ import javax.swing.border.BevelBorder;
 
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
-import controlador.Login;
 import controlador.Main;
 
 @SuppressWarnings("serial")
@@ -97,18 +97,20 @@ public class Apl_login extends JFrame {
 		JButton BtnIngresar = new JButton("Ingresar");
 		BtnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Login log = new Login();
 				String clav = String.valueOf(buffClave.getPassword());
 				
-				if(log.ingreso(buffRut.getText(), clav)){
-					//Main m = new Main();
-					
-					Apl_prin.main(null);
-					
+				Main m = new Main();
+				
+				try {
+					m.iniciarSecion(buffRut.getText(), clav);
+					setVisible(false);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					JOptionPane.showMessageDialog(null, "Problemas al recoger los datos");
 				}
-				else {
-					JOptionPane.showMessageDialog(null,"Error al ingresar, intente nuevamente");
-				}
+				
+				
 			}
 		});
 		BtnIngresar.setVerticalAlignment(SwingConstants.BOTTOM);

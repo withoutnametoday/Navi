@@ -3,8 +3,9 @@ package clases;
 import java.util.ArrayList;
 
 /**
+ * 
+ * @author Franco
  *
- * @author Estudiante_2
  */
 public class Ramo {
 	

@@ -356,4 +356,12 @@ public class Alumno extends Usuario {
 	public void setNumeroTelefono(String numeroTelefono) {
 		this.numeroTelefono = numeroTelefono;
 	}
+
+	public Carrera getCarreraAlumno() {
+		return CarreraAlumno;
+	}
+
+	public void setCarreraAlumno(Carrera carreraAlumno) {
+		CarreraAlumno = carreraAlumno;
+	}
 }

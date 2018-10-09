@@ -1,7 +1,6 @@
 package controlador;
 
 import java.sql.*;
-
 import javax.swing.JOptionPane;
 
 public class Conexion {
@@ -15,12 +14,11 @@ public class Conexion {
 			con = DriverManager.getConnection("jdbc:mysql://localHost/Navi", "root", "");
 		}
 		catch(ClassNotFoundException | SQLException e){
-			System.out.println("error de conexion" + e);
+			//System.out.println("error de conexion" + e);
 			JOptionPane.showMessageDialog(null,"Rut o Clave erroneos, intentelo nuevamente " + e);
 		}
 		
 		return con;
 	}
-	
 
 }
